@@ -1,12 +1,14 @@
 <template>
   <div>
-    <a href="/createPost">
-      <button class="button">Новый Пост</button>
-    </a> 
-    <ol>
+    <div class="button">
+      <a href="/createPost">
+        <button >Новый Пост</button>
+      </a>
+    </div>
+    <div>
       <post @remove="remove" />
-    </ol>
-  </div>
+    </div>
+    </div>
 </template>
 
 <script>
@@ -33,5 +35,10 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.button{
+  width: 100px;
+  height: 50px;
+  margin:0 auto;
+}
 </style>

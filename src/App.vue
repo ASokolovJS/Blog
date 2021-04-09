@@ -17,10 +17,6 @@ export default {
 </script>
 
 <style>
-.button{
-  position: relative;
-  left: 50%;
-}
 .title{
   background: blanchedalmond;
   text-align: center;
