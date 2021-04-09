@@ -40,5 +40,8 @@ export default {
   width: 100px;
   height: 50px;
   margin:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 </style>

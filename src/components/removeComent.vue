@@ -1,12 +1,12 @@
 <template>
   <div class="main">
-    <h2>Комментарии:</h2>
+    <h2 class="title">Комментарии:</h2>
     <div class="listcomment">
       <li v-for='coments of comentsPost' :key="coments.id">
         {{coments.author}} : {{coments.coment}}
       </li>
     </div>
-    <hr>
+    <hr class="line">
     <button class="but" @click="remCom()">Удалить комментарии</button>
   </div>
 </template>
@@ -27,6 +27,9 @@ export default {
 </script>
 
 <style>
+.line{
+  width: 400px;
+}
 .main{
   text-align: center;
   width: 600px;
@@ -35,7 +38,6 @@ export default {
   left:0;
   right:0;
   box-sizing: border-box;
-  border: 2px solid #000000;
 }
 .but{
 margin: 20px auto;

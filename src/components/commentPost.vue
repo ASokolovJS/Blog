@@ -9,10 +9,10 @@
       /><br />
       <button @click="addCom()">Отправить</button>
     </div>
-    <div>
+    <div class="remDiv">
       <removeComent />
     </div>
-</div>
+  </div>
 </template>
 
 <script>
@@ -53,13 +53,22 @@ export default {
 </script>
 
 <style>
-.comment {
-  box-sizing: border-box;
-  border: 1px solid #000;;
-  right: 50px;
+.remDiv{
+  margin-top: 80px;
 }
+.comment {
+  text-align: center;
+  width: 600px;
+  position: absolute;
+  margin:0 auto;
+  left:0;
+  right:0;
+  box-sizing: border-box;  
+}
+
 .commentPost {
- display: flex;
+  display: flex;
+  flex-direction: column;
 }
 .list {
   margin: 20px;

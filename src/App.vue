@@ -17,8 +17,15 @@ export default {
 </script>
 
 <style>
+button{
+  background: #ffebcd;
+  color:#000000;
+  text-align:center;
+  border-radius: 15px;
+}
+
 .title{
-  background: blanchedalmond;
+  background: #ffebcd;
   text-align: center;
 }
 </style>>

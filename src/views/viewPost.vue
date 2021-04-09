@@ -3,16 +3,23 @@
     <div>
       <span class="title">
         <h1>{{ fPost.title }}</h1>
+        <hr class="line">
       </span>
       <span class="fullText">
         <h3>{{ fPost.fullText }}</h3>
       </span>
-      <hr>
-       <a href="/editPost"><button>Редактировать пост</button></a><br>
-      <a href="/"><button v-on:click="show()">Назад</button></a>
+      <hr class="line" />
+      <div class="buttonPost">
+        <a href="/editPost">
+          <button>Редактировать пост</button>
+        </a>
+        <a href="/">
+          <button class="bBack" v-on:click="show()">Вернуться назад</button>
+        </a>
+      </div>
       <hr />
-      <commentPost />
     </div>
+    <commentPost />
   </div>
 </template>
 
@@ -36,12 +43,24 @@ export default {
 };
 </script>
 <style scoped>
-.back{
+.line{
+  width: 350px;
+}
+.bBack {
+  margin-left: 5px;
+}
+.buttonPost {
+  max-width: 280px;
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.back {
   position: relative;
-  
 }
 .title {
- 
   text-align: center;
 }
 .fullText {

@@ -6,7 +6,7 @@
       </a>
       <h3>{{ posts.smallText }}</h3>
       <h4>Кол-во комментариев: {{ posts.coments.length }}</h4>
-      <button @click="$emit('remove', posts.id)">Удалить пост</button>
+      <button class="remove" @click="$emit('remove', posts.id)">Удалить пост</button>
     </div>
   </div>
  
@@ -27,16 +27,19 @@ export default {
 </script>
 
 <style>
+.titlePost{
+   background: blanchedalmond;
+}
 .post {
   text-align: center;
-  margin-top: 25px;
   width:300px;
   margin:0 auto;
+  margin-top: 25px;
   box-sizing: border-box;
   border: 1px solid #000000;
   border-radius: 10px;
 }
-.titlePost{
-   background: blanchedalmond;
+.remove{
+   margin-bottom: 10px;
 }
 </style>
